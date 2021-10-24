@@ -5,8 +5,8 @@ window = Tk(className='--EU Verification--')
 window.geometry("900x1200")
 window.config(bg='#2a388f')
 
-canvas1= Canvas(window, width= 525, height= 90, bg="#2a388f", highlightthickness=0)
-canvas1.create_text(0, 10 , anchor=NW, text="Welcome to EU Verification", fill="white", font=('Helvetica 15 bold'))
+canvas1= Canvas(window, width= 900, height= 90, bg="#2a388f", highlightthickness=0)
+canvas1.create_text(450, 45 , anchor=CENTER, text="Welcome to EU Verification", fill="white", font=("Lucida Handwriting Bold" , 15 ))
 canvas1.pack()
 
 canvas2 = Canvas(window , width=374 , height=218)      
@@ -66,9 +66,9 @@ E6.pack(side= 'top')
 L8 = Label(window, text="   " , bg='#2a388f' , fg='white', highlightthickness=0)
 L8.pack()
 
-def hello():
+def ok():
     messagebox.showinfo("Success !", "Your request for EU Verification Succeeded")
-B = Button(window, text ="SUBMIT", bg='#1AB9D9' ,fg='white' , command=hello)
+B = Button(window, text ="SUBMIT", bg='#1AB9D9' ,fg='white' , command=ok)
 B.pack()
 
 window.mainloop()
